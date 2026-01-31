@@ -2,6 +2,7 @@ body,
 html {
     font-family: "Roboto", "Noto Snas JP", sans-serif;
     margin-bottom: 200px;
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -92,15 +93,22 @@ nav li :hover {
 .firstview-container .down {
     font-size: 30px;
     color: black;
+    cursor: pointer;
 }
 
 /* About */
+.nav-about {
+    position: absolute;
+    margin-top: 600px;
+}
+
 .about-container {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50vh;
 }
 
 .about-container h2 {
@@ -131,6 +139,21 @@ nav li :hover {
     font-size: 25px;
     font-weight: 500;
     font-family: "Inconsolata";
+}
+
+/* Works */
+.works-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.works-container h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
 }
 
 /* fonts */
