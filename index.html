@@ -27,9 +27,9 @@
         <div class="title">Toufuuuuuu | Student Developer</div>
         <nav class="nav-container">
             <ul class="nav-list">
-                <li><a href="./">about</a></li>
-                <li><a href="./">works</a></li>
-                <li><a href="./">contact</a></li>
+                <li><a onclick="document.getElementById('about').scrollIntoView()">about</a></li>
+                <li><a onclick="document.getElementById('works').scrollIntoView()">works</a></li>
+                <li><a onclick="document.getElementById('connect').scrollIntoView()">connect</a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +44,8 @@
                 </div>
                 <h2 class="scramble"></h2>
             </div>
-            <a onclick="document.getElementById('about').scrollIntoView()"><img src="assets/svg/arrow_left.svg" alt="" class="down" width="32" height="32"></a>
+            <a onclick="document.getElementById('about').scrollIntoView()"><img src="assets/svg/arrow_left.svg" alt=""
+                    class="down" width="32" height="32"></a>
             <div id="about" class="nav-about"></div>
         </div>
 
@@ -55,18 +56,37 @@
                 <img src="assets/image/icon.png" alt="" class="profile-icon">
                 <div class="profile-text">
                     <div class="name">Toufuuuuuu</div>
-                    <div>ただの学生。<br>幅広い技術の習得を目指して活動しています。<br>不安と恐怖の中にある美しさを学びたい。</div>
+                    <div>ただの学生。<br>幅広い技術の習得を目指して活動しています。<br>リミナルスペース大好き。</div>
                 </div>
             </div>
+            <div id="works" class="nav-works"></div>
         </div>
 
         <!-- Works -->
         <div class="works-container">
             <h2>Works</h2>
+            <div class="works-box">
+                <button onclick="location.href=`./software.html`" class="works-button">Software</button>
+                <button class="works-button-2">Visual Arts</button>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="connect-container">
+            <div id="connect"></div>
+            <h2>Connect</h2>
+            <div class="connect-icons">
+                <a href="https://x.com/Toufu_Studio" target="_blank"><img src="assets/social_logo/logo-black.png" alt=""
+                        class="icon"></a>
+                <a href="https://x.com/Toufu_Studio" target="_blank"><img
+                        src="assets/social_logo/GitHub_Invertocat_Black.svg" alt="" class="icon"></a>
+            </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        © 2026 Toufuuuuuu. All rights reserved.
+    </footer>
 
     <script src="/common/js/function.js"></script>
 

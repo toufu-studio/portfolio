@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrambleTextPlugin)
 gsap.to(".scramble", {
   duration: 1.5, 
   scrambleText: {
-    text: "Game / Web / App",
+    text: "Dev / Visual Arts",
   }
 });
 
